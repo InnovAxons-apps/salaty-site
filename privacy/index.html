@@ -1,16 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Salaty privacy policy</title>
-  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Salaty collects no data. Everything stays on your phone.">
+  <link rel="canonical" href="https://salaty.innovaxons.com/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://salaty.innovaxons.com/privacy/">
+  <link rel="alternate" hreflang="en" href="https://salaty.innovaxons.com/privacy/">
+  <link rel="alternate" hreflang="ar" href="https://salaty.innovaxons.com/ar/privacy/">
+  <link rel="alternate" hreflang="id" href="https://salaty.innovaxons.com/id/privacy/">
+  <link rel="alternate" hreflang="ur" href="https://salaty.innovaxons.com/ur/privacy/">
+  <link rel="alternate" hreflang="tr" href="https://salaty.innovaxons.com/tr/privacy/">
+  <link rel="alternate" hreflang="fr" href="https://salaty.innovaxons.com/fr/privacy/">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <main>
-    <nav><a href="../">Salaty</a> <a href="#ar" lang="ar">العربية</a> <a href="#kids">For kids</a></nav>
+  <a href="#content" class="sr-only">Skip to content</a>
+  <main id="content">
+    <nav class="lang-switcher" aria-label="Language">
+      <strong>English</strong> · 
+      <a href="/ar/privacy/" lang="ar" dir="rtl">العربية</a> · 
+      <a href="/id/privacy/" lang="id">Bahasa Indonesia</a> · 
+      <a href="/ur/privacy/" lang="ur" dir="rtl">اردو</a> · 
+      <a href="/tr/privacy/" lang="tr">Türkçe</a> · 
+      <a href="/fr/privacy/" lang="fr">Français</a>
+    </nav>
+    <nav class="page-nav">
+      <a href="/">Salaty</a>
+      <a href="#kids">For kids</a>
+    </nav>
     <h1>Privacy policy</h1>
-    <p class="muted">Last updated: 20 October 2026</p>
+    <p class="muted">Last updated: 30 October 2026</p>
 
     <section>
       <h2>Short version</h2>
@@ -19,13 +40,26 @@
 
     <h2>What the app stores, and where</h2>
     <section>
-      <table>
-        <tr><th>What</th><th>Why</th><th>Where it stays</th><th>How to delete it</th></tr>
-        <tr><td>Your approximate location, or the city you picked</td><td>To calculate prayer times and the Qibla direction</td><td>Only on your phone</td><td>Settings → Reset, or uninstall the app</td></tr>
-        <tr><td>Your settings (method, alerts, adjustments)</td><td>To remember your choices</td><td>Only on your phone</td><td>Settings → Reset, or uninstall the app</td></tr>
-        <tr><td>Scheduled prayer alerts</td><td>To play the athan and reminders on time</td><td>Only on your phone</td><td>Turn alerts off, Reset, or uninstall</td></tr>
-      </table>
-      <p class="muted">The app does not back up this data to Google Drive or iCloud.</p>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">What</th>
+              <th scope="col">Why</th>
+              <th scope="col">Where it stays</th>
+              <th scope="col">How to delete it</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr><td>Your approximate location, or the city you picked</td><td>To calculate prayer times and the Qibla direction</td><td>Only on your phone</td><td>Settings → Reset, or uninstall the app</td></tr>
+          <tr><td>Your settings (calculation method, alerts, sound choices, adjustments)</td><td>To remember your choices (including athan voice, reminder and iqama sounds)</td><td>Only on your phone</td><td>Settings → Reset, or uninstall the app</td></tr>
+          <tr><td>Scheduled prayer alerts</td><td>To play the athan and reminders on time</td><td>Only on your phone (the phone's own alarm system)</td><td>Turn alerts off, Reset, or uninstall</td></tr>
+          <tr><td>Alert arrival log</td><td>To check if athans arrived on time (kept up to 60 days for the alert health screen)</td><td>Only on your phone</td><td>Settings → Reset, or uninstall the app</td></tr>
+          <tr><td>Widget data</td><td>A 30-day prayer schedule and your widget styling choices, so home-screen widgets work without opening the app</td><td>Only on your phone</td><td>Remove the widgets, Settings → Reset, or uninstall</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">The app does not back up this data to Google Drive, iCloud, or any server.</p>
     </section>
 
     <h2>What the app does not do</h2>
@@ -42,21 +76,32 @@
     <h2>Permissions the app asks for</h2>
     <section>
       <ul>
-        <li><strong>Approximate location:</strong> to calculate prayer times for where you are, and for the compass on the Qibla screen. You can pick a city instead.</li>
-        <li><strong>Notifications:</strong> to show the athan and reminders.</li>
-        <li><strong>Alarms &amp; reminders (Android):</strong> so the athan arrives on time, not minutes late.</li>
-        <li><strong>Start at boot (Android, automatic):</strong> to set your alerts again after the phone restarts.</li>
+        <li><strong>Approximate location (<code>ACCESS_COARSE_LOCATION</code>):</strong> to calculate prayer times for where you are, and for the compass on the Qibla screen. You can pick a city instead.</li>
+        <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> to show the athan and reminders.</li>
+        <li><strong>Alarms &amp; reminders (<code>SCHEDULE_EXACT_ALARM</code>, Android):</strong> so the athan arrives on time, not minutes late.</li>
+        <li><strong>Start at boot (<code>RECEIVE_BOOT_COMPLETED</code>, Android):</strong> to set your alerts again after the phone restarts.</li>
+        <li><strong>Do Not Disturb access (<code>ACCESS_NOTIFICATION_POLICY</code>, Android, optional):</strong> only if you turn on auto-silent, to silence the phone during prayer and restore it afterwards.</li>
+        <li><strong>Motion sensor and a short background task (<code>FOREGROUND_SERVICE</code>, <code>WAKE_LOCK</code>, Android, optional):</strong> only if you turn on flip-to-mute, and only while an athan is ringing, to notice the phone being turned face-down. Nothing is recorded.</li>
+        <li><strong>Vibration (<code>VIBRATE</code>):</strong> for the vibrate option and haptic feedback on the Qibla screen.</li>
       </ul>
+    </section>
+
+    <h2>When Salaty opens another app</h2>
+    <section>
+      <ul>
+        <li><strong>"Mosques near me":</strong> opens your maps app with a search for mosques around your saved location. Salaty hands that location to the maps app, whose own privacy rules then apply. Salaty itself still sends nothing over the internet.</li>
+        <li><strong>Web links:</strong> the app may open this privacy page or its store page in your web browser. Those websites have their own privacy rules; the app itself sends nothing.</li>
+      </ul>
+    </section>
+
+    <h2>Battery optimisation</h2>
+    <section>
+      <p>The app checks whether Android battery optimisation is enabled for Salaty to show a tip if alerts might be delayed. Nothing is stored or transmitted.</p>
     </section>
 
     <h2>Children</h2>
     <section>
       <p>Salaty is suitable for all ages. Because it collects no personal information from anyone, it collects none from children either. It has no ads, no chat and no purchases.</p>
-    </section>
-
-    <h2>Links that leave the app</h2>
-    <section>
-      <p>The app may open this page or its store page in your web browser. Those websites have their own privacy rules; the app itself sends nothing.</p>
     </section>
 
     <h2>Changes to this policy</h2>
@@ -75,77 +120,13 @@
         <li>Salaty shows prayer times and plays the athan.</li>
         <li><strong>It does not collect anything about you.</strong> Not your name, not where you are, nothing.</li>
         <li>It uses your phone's location only to work out the prayer times. That information <strong>stays on your phone</strong>.</li>
+        <li>"Mosques near me" opens your phone's maps app; ask a parent before using it.</li>
         <li>There are <strong>no ads</strong> and <strong>no chat</strong>.</li>
-        <li>If you have questions, ask a parent to email us.</li>
+        <li>If you have questions, ask a parent to email us at <a href="mailto:innovaxons.apps@gmail.com">innovaxons.apps@gmail.com</a>.</li>
       </ul>
     </section>
-
-    <div id="ar" lang="ar" dir="rtl">
-      <h1>سياسة الخصوصية</h1>
-      <p class="muted">آخر تحديث: ٢٠ أكتوبر ٢٠٢٦</p>
-
-      <section>
-        <h2>باختصار</h2>
-        <p><strong>لا يجمع صلاتي أي بيانات عنك.</strong> كل ما يحتاجه التطبيق، بما في ذلك موقعك، يبقى على هاتفك. ولا يملك تطبيق أندرويد إذنًا باستخدام الإنترنت أصلًا، فلا يمكنه إرسال أي شيء.</p>
-      </section>
-
-      <h2>ما يحفظه التطبيق وأين</h2>
-      <section>
-        <table>
-          <tr><th>ماذا</th><th>لماذا</th><th>أين يبقى</th><th>كيف تحذفه</th></tr>
-          <tr><td>موقعك التقريبي أو المدينة التي اخترتها</td><td>لحساب مواقيت الصلاة واتجاه القبلة</td><td>على هاتفك فقط</td><td>الإعدادات ← إعادة الضبط، أو احذف التطبيق</td></tr>
-          <tr><td>إعداداتك (طريقة الحساب، التنبيهات، التعديلات)</td><td>لتذكّر اختياراتك</td><td>على هاتفك فقط</td><td>الإعدادات ← إعادة الضبط، أو احذف التطبيق</td></tr>
-          <tr><td>تنبيهات الصلاة المجدولة</td><td>لتشغيل الأذان والتذكيرات في وقتها</td><td>على هاتفك فقط</td><td>أوقف التنبيهات، أو أعد الضبط، أو احذف التطبيق</td></tr>
-        </table>
-        <p class="muted">لا ينسخ التطبيق هذه البيانات احتياطيًا إلى Google Drive أو iCloud.</p>
-      </section>
-
-      <h2>ما لا يفعله التطبيق</h2>
-      <section>
-        <ul>
-          <li>لا حسابات ولا تسجيل دخول.</li>
-          <li>لا إعلانات ولا تحليلات ولا خدمات لتقارير الأعطال ولا تتبّع.</li>
-          <li>لا بيع ولا مشاركة للبيانات، فلا توجد بيانات أصلًا: لا شيء يغادر هاتفك.</li>
-          <li>لا موقع دقيق: يطلب التطبيق موقعك <strong>التقريبي</strong> فقط، وعندما تضغط "استخدم موقعي" أو "استخدم البوصلة" فقط.</li>
-          <li>لا موقع في الخلفية: يُقرأ الموقع فقط والتطبيق مفتوح.</li>
-        </ul>
-      </section>
-
-      <h2>الأذونات التي يطلبها التطبيق</h2>
-      <section>
-        <ul>
-          <li><strong>الموقع التقريبي:</strong> لحساب مواقيت الصلاة حيث أنت، وللبوصلة في شاشة القبلة. يمكنك اختيار مدينة بدلًا من ذلك.</li>
-          <li><strong>الإشعارات:</strong> لعرض الأذان والتذكيرات.</li>
-          <li><strong>المنبهات والتذكيرات (أندرويد):</strong> ليصل الأذان في وقته لا متأخرًا.</li>
-          <li><strong>التشغيل عند إقلاع الهاتف (أندرويد، تلقائي):</strong> لإعادة ضبط تنبيهاتك بعد إعادة تشغيل الهاتف.</li>
-        </ul>
-      </section>
-
-      <h2>الأطفال</h2>
-      <section>
-        <p>صلاتي مناسب لجميع الأعمار. ولأنه لا يجمع أي معلومات شخصية من أحد، فهو لا يجمع شيئًا من الأطفال أيضًا. لا إعلانات ولا محادثات ولا مشتريات.</p>
-      </section>
-
-      <h2>للأطفال: صلاتي وخصوصيتك</h2>
-      <section>
-        <ul>
-          <li>يعرض صلاتي مواقيت الصلاة ويُشغّل الأذان.</li>
-          <li><strong>لا يجمع أي شيء عنك.</strong> لا اسمك ولا مكانك ولا أي شيء آخر.</li>
-          <li>يستخدم موقع هاتفك فقط لحساب مواقيت الصلاة، وتبقى هذه المعلومة <strong>على هاتفك</strong>.</li>
-          <li><strong>لا إعلانات</strong> و<strong>لا محادثات</strong>.</li>
-          <li>إذا كان لديك سؤال، اطلب من أحد والديك مراسلتنا.</li>
-        </ul>
-      </section>
-
-      <h2>تغييرات هذه السياسة</h2>
-      <section>
-        <p>إذا تغيّرت هذه السياسة، تُنشر النسخة الجديدة في هذه الصفحة بتاريخ جديد. لن نبدأ أبدًا بجمع أي بيانات دون أن نذكر ذلك هنا أولًا وفي التطبيق.</p>
-      </section>
-
-      <h2>التواصل</h2>
-      <section>
-        <p><a href="mailto:innovaxons.apps@gmail.com">innovaxons.apps@gmail.com</a></p>
-      </section>
+    <div id="ar" lang="ar" dir="rtl" class="muted" style="margin-top: 2rem; font-size: 0.9rem;">
+      <p>لقراءة سياسة الخصوصية باللغة العربية، يرجى زيارة <a href="/ar/privacy/">صفحة سياسة الخصوصية بالعربية</a>.</p>
     </div>
   </main>
 </body>
