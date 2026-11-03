@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Salaty : Politique de confidentialité</title>
-  <meta name="description" content="Salaty ne collecte aucune donnée. Tout reste sur votre téléphone.">
+  <meta name="description" content="Salaty ne collecte aucune donnée.">
   <link rel="canonical" href="https://salaty.innovaxons.com/privacy/">
   <link rel="alternate" hreflang="x-default" href="https://salaty.innovaxons.com/privacy/">
   <link rel="alternate" hreflang="en" href="https://salaty.innovaxons.com/privacy/">
@@ -32,11 +32,11 @@
       <a href="#kids">Pour les enfants</a>
     </nav>
     <h1>Politique de confidentialité</h1>
-    <p class="muted">Dernière mise à jour : 30 octobre 2026</p>
+    <p class="muted">Dernière mise à jour : 4 novembre 2026</p>
 
     <section>
       <h2>En résumé</h2>
-      <p><strong>Salaty ne collecte aucune donnée vous concernant.</strong> Tout ce dont l'application a besoin, y compris votre position, reste sur votre téléphone. L'application Android ne dispose même pas de l'autorisation d'accéder à Internet, elle ne peut donc rien envoyer nulle part.</p>
+      <p><strong>Salaty ne collecte aucune donnée vous concernant.</strong> Tout ce dont l'application a besoin, y compris votre position, reste sur votre téléphone. L'application Android ne dispose même pas de l'autorisation d'accéder à Internet, et nous n'avons aucun serveur. La seule exception est l'application de montre, facultative : si vous installez Salaty sur une montre Wear OS, votre téléphone lui transmet vos réglages (voir ci-dessous).</p>
     </section>
 
     <h2>Ce que l'application stocke et où</h2>
@@ -52,8 +52,8 @@
             </tr>
           </thead>
           <tbody>
-          <tr><td>Votre position approximative (ou la ville choisie)</td><td>Pour calculer les horaires de prière et la direction de la Qibla</td><td>Uniquement sur votre téléphone</td><td>Paramètres → Réinitialiser Salaty, ou désinstaller l'application</td></tr>
-          <tr><td>Vos réglages (méthode de calcul, alertes, choix sonores, ajustements)</td><td>Pour mémoriser vos préférences (voix de l'adhan, rappels et sons d'iqama inclus)</td><td>Uniquement sur votre téléphone</td><td>Paramètres → Réinitialiser Salaty, ou désinstaller l'application</td></tr>
+          <tr><td>Votre position approximative (ou la ville choisie)</td><td>Pour calculer les horaires de prière et la direction de la Qibla</td><td>Sur votre téléphone, et sur votre montre si vous avez installé l'application de montre</td><td>Paramètres → Réinitialiser Salaty, ou désinstaller l'application</td></tr>
+          <tr><td>Vos réglages (méthode de calcul, alertes, choix sonores, ajustements)</td><td>Pour mémoriser vos préférences (voix de l'adhan, rappels et sons d'iqama inclus)</td><td>Sur votre téléphone, et sur votre montre si vous avez installé l'application de montre</td><td>Paramètres → Réinitialiser Salaty, ou désinstaller l'application</td></tr>
           <tr><td>Alertes de prière programmées</td><td>Pour déclencher l'adhan et les rappels à l'heure exacte</td><td>Uniquement sur votre téléphone (système d'alarme du téléphone)</td><td>Désactiver les alertes, Réinitialiser, ou désinstaller l'application</td></tr>
           <tr><td>Journal de réception des alertes</td><td>Pour vérifier la ponctualité de l'adhan (conservé jusqu'à 60 jours pour l'écran d'état des alertes)</td><td>Uniquement sur votre téléphone</td><td>Paramètres → Réinitialiser Salaty, ou désinstaller l'application</td></tr>
           <tr><td>Données des widgets</td><td>Calendrier de prière sur 30 jours et réglages d'apparence, permettant aux widgets de fonctionner sans ouvrir l'application</td><td>Uniquement sur votre téléphone</td><td>Supprimer les widgets, Paramètres → Réinitialiser, ou désinstaller</td></tr>
@@ -68,7 +68,7 @@
       <ul>
         <li>Aucun compte, aucune connexion.</li>
         <li>Aucune publicité, aucun outil d'analyse, aucun service de rapport d'erreur, aucun suivi.</li>
-        <li>Aucune vente ni partage de données. Il n'y a aucune donnée à partager : rien ne quitte votre téléphone.</li>
+        <li>Aucune vente ni partage de données. Nous ne recevons jamais vos données : nous n'avons donc rien à partager.</li>
         <li>Aucune localisation précise : l'application demande uniquement votre position <strong>approximative</strong>, et seulement lorsque vous appuyez sur « Utiliser ma position » ou « Utiliser la boussole ».</li>
         <li>Aucune localisation en arrière-plan : la position n'est lue que lorsque l'application est ouverte.</li>
       </ul>
@@ -87,6 +87,16 @@
         <li><strong>Vibreur (<code>VIBRATE</code>) :</strong> pour l'option vibreur et les retours haptiques sur l'écran de la Qibla.</li>
         <li><strong>Réglages audio (<code>MODIFY_AUDIO_SETTINGS</code>) :</strong> pour lire l'adhan et les aperçus de sons dans l'application.</li>
         <li><strong>Pastilles d'icône (ajoutées par la bibliothèque de notifications, par ex. pour les écrans d'accueil Samsung, Huawei ou Oppo) :</strong> Salaty n'affiche jamais de pastille sur son icône ; ces autorisations ne servent pas.</li>
+      </ul>
+    </section>
+
+    <h2>Si vous utilisez l'application pour montre Wear OS</h2>
+    <section>
+      <p>Ceci s'applique uniquement si vous installez Salaty sur une montre Wear OS. Sans l'application de montre, votre téléphone ne lui envoie rien.</p>
+      <ul>
+        <li><strong>Ce qui est envoyé :</strong> votre position ou votre ville (coordonnées, nom et fuseau horaire), les réglages de calcul, la langue et le style des chiffres. La montre en a besoin pour calculer elle-même les horaires.</li>
+        <li><strong>Comment cela circule :</strong> via les services Google Play (Wear OS Data Layer). Directement en Bluetooth quand la montre est connectée. Quand le Bluetooth n'est pas disponible, Google fait transiter les données par ses serveurs, chiffrées de bout en bout. Seule l'application Salaty sur vos appareils peut les lire ; nous ne les recevons pas.</li>
+        <li><strong>Comment l'arrêter :</strong> désinstallez Salaty de la montre. À la prochaine ouverture de Salaty sur le téléphone, la copie partagée est supprimée.</li>
       </ul>
     </section>
 

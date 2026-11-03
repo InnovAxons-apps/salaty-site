@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Salaty privacy policy</title>
-  <meta name="description" content="Salaty collects no data. Everything stays on your phone.">
+  <meta name="description" content="Salaty collects no data.">
   <link rel="canonical" href="https://salaty.innovaxons.com/privacy/">
   <link rel="alternate" hreflang="x-default" href="https://salaty.innovaxons.com/privacy/">
   <link rel="alternate" hreflang="en" href="https://salaty.innovaxons.com/privacy/">
@@ -31,11 +31,11 @@
       <a href="#kids">For kids</a>
     </nav>
     <h1>Privacy policy</h1>
-    <p class="muted">Last updated: 30 October 2026</p>
+    <p class="muted">Last updated: 4 November 2026</p>
 
     <section>
       <h2>Short version</h2>
-      <p><strong>Salaty collects no data about you.</strong> Everything the app needs, including your location, stays on your phone. The Android app doesn't even have permission to use the internet, so it can't send anything anywhere.</p>
+      <p><strong>Salaty collects no data about you.</strong> Everything the app needs, including your location, stays on your phone. The Android app doesn't even have permission to use the internet, and we have no servers. The one exception is the optional watch app: if you install Salaty on a Wear OS watch, your phone passes your settings to it (see below).</p>
     </section>
 
     <h2>What the app stores, and where</h2>
@@ -51,8 +51,8 @@
             </tr>
           </thead>
           <tbody>
-          <tr><td>Your approximate location, or the city you picked</td><td>To calculate prayer times and the Qibla direction</td><td>Only on your phone</td><td>Settings → Reset, or uninstall the app</td></tr>
-          <tr><td>Your settings (calculation method, alerts, sound choices, adjustments)</td><td>To remember your choices (including athan voice, reminder and iqama sounds)</td><td>Only on your phone</td><td>Settings → Reset, or uninstall the app</td></tr>
+          <tr><td>Your approximate location, or the city you picked</td><td>To calculate prayer times and the Qibla direction</td><td>On your phone, and on your watch if you installed the watch app</td><td>Settings → Reset, or uninstall the app</td></tr>
+          <tr><td>Your settings (calculation method, alerts, sound choices, adjustments)</td><td>To remember your choices (including athan voice, reminder and iqama sounds)</td><td>On your phone, and on your watch if you installed the watch app</td><td>Settings → Reset, or uninstall the app</td></tr>
           <tr><td>Scheduled prayer alerts</td><td>To play the athan and reminders on time</td><td>Only on your phone (the phone's own alarm system)</td><td>Turn alerts off, Reset, or uninstall</td></tr>
           <tr><td>Alert arrival log</td><td>To check if athans arrived on time (kept up to 60 days for the alert health screen)</td><td>Only on your phone</td><td>Settings → Reset, or uninstall the app</td></tr>
           <tr><td>Widget data</td><td>A 30-day prayer schedule and your widget styling choices, so home-screen widgets work without opening the app</td><td>Only on your phone</td><td>Remove the widgets, Settings → Reset, or uninstall</td></tr>
@@ -67,7 +67,7 @@
       <ul>
         <li>No accounts, no sign-in.</li>
         <li>No ads, no analytics, no crash-reporting services, no tracking.</li>
-        <li>No selling or sharing of data. There is no data to share: nothing leaves your phone.</li>
+        <li>No selling or sharing of data. We never receive your data, so there is nothing for us to share.</li>
         <li>No precise location: the app asks only for your <strong>approximate</strong> location, and only when you tap "Use my location" or "Use compass".</li>
         <li>No background location: the location is read only while the app is open.</li>
       </ul>
@@ -86,6 +86,16 @@
         <li><strong>Vibration (<code>VIBRATE</code>):</strong> for the vibrate option and haptic feedback on the Qibla screen.</li>
         <li><strong>Sound settings (<code>MODIFY_AUDIO_SETTINGS</code>):</strong> to play athan and sound previews inside the app.</li>
         <li><strong>App icon badges (added by the notifications library, e.g. for Samsung, Huawei or Oppo home screens):</strong> Salaty never shows a badge on its icon; these do nothing.</li>
+      </ul>
+    </section>
+
+    <h2>If you use the Wear OS watch app</h2>
+    <section>
+      <p>This only applies if you install Salaty on a Wear OS watch. Without the watch app, your phone sends nothing to it.</p>
+      <ul>
+        <li><strong>What is sent:</strong> your location or city (coordinates, name and time zone), calculation settings, language and number style. The watch needs these to work out prayer times by itself.</li>
+        <li><strong>How it travels:</strong> through Google Play services (the Wear OS Data Layer). It goes directly over Bluetooth when the watch is connected. When Bluetooth isn't available, Google routes it through its servers, end-to-end encrypted. Only the Salaty app on your own devices can read it; we don't receive it.</li>
+        <li><strong>How to stop it:</strong> uninstall Salaty from the watch. The next time you open Salaty on your phone, it removes the shared copy.</li>
       </ul>
     </section>
 

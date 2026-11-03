@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Salaty: Kebijakan Privasi</title>
-  <meta name="description" content="Salaty tidak mengumpulkan data apa pun. Semua data tetap tersimpan di ponsel Anda.">
+  <meta name="description" content="Salaty tidak mengumpulkan data apa pun.">
   <link rel="canonical" href="https://salaty.innovaxons.com/privacy/">
   <link rel="alternate" hreflang="x-default" href="https://salaty.innovaxons.com/privacy/">
   <link rel="alternate" hreflang="en" href="https://salaty.innovaxons.com/privacy/">
@@ -32,11 +32,11 @@
       <a href="#kids">Untuk anak-anak</a>
     </nav>
     <h1>Kebijakan Privasi</h1>
-    <p class="muted">Terakhir diperbarui: 30 Oktober 2026</p>
+    <p class="muted">Terakhir diperbarui: 4 November 2026</p>
 
     <section>
       <h2>Ringkasan</h2>
-      <p><strong>Salaty tidak mengumpulkan data apa pun tentang Anda.</strong> Segala sesuatu yang dibutuhkan aplikasi, termasuk lokasi Anda, tetap tersimpan di ponsel Anda. Aplikasi Android bahkan tidak memiliki izin internet, sehingga tidak dapat mengirim data apa pun ke mana pun.</p>
+      <p><strong>Salaty tidak mengumpulkan data apa pun tentang Anda.</strong> Segala sesuatu yang dibutuhkan aplikasi, termasuk lokasi Anda, tetap tersimpan di ponsel Anda. Aplikasi Android bahkan tidak memiliki izin internet, dan kami tidak memiliki server. Satu-satunya pengecualian adalah aplikasi jam opsional: jika Anda memasang Salaty di jam Wear OS, ponsel meneruskan pengaturan Anda ke jam (lihat di bawah).</p>
     </section>
 
     <h2>Data yang disimpan aplikasi dan lokasinya</h2>
@@ -52,8 +52,8 @@
             </tr>
           </thead>
           <tbody>
-          <tr><td>Perkiraan lokasi Anda (atau kota pilihan Anda)</td><td>Untuk menghitung waktu salat dan arah kiblat</td><td>Hanya di ponsel Anda</td><td>Pengaturan → Atur Ulang Salaty, atau copot aplikasi</td></tr>
-          <tr><td>Pengaturan Anda (metode perhitungan, pengingat, pilihan suara, penyesuaian)</td><td>Untuk mengingat preferensi Anda (termasuk suara azan, pengingat, dan ikamah)</td><td>Hanya di ponsel Anda</td><td>Pengaturan → Atur Ulang Salaty, atau copot aplikasi</td></tr>
+          <tr><td>Perkiraan lokasi Anda (atau kota pilihan Anda)</td><td>Untuk menghitung waktu salat dan arah kiblat</td><td>Di ponsel Anda, dan di jam Anda jika memasang aplikasi jam</td><td>Pengaturan → Atur Ulang Salaty, atau copot aplikasi</td></tr>
+          <tr><td>Pengaturan Anda (metode perhitungan, pengingat, pilihan suara, penyesuaian)</td><td>Untuk mengingat preferensi Anda (termasuk suara azan, pengingat, dan ikamah)</td><td>Di ponsel Anda, dan di jam Anda jika memasang aplikasi jam</td><td>Pengaturan → Atur Ulang Salaty, atau copot aplikasi</td></tr>
           <tr><td>Jadwal pengingat salat</td><td>Untuk memutar azan dan pengingat tepat waktu</td><td>Hanya di ponsel Anda (sistem alarm ponsel)</td><td>Nonaktifkan pengingat, Atur Ulang, atau copot aplikasi</td></tr>
           <tr><td>Catatan riwayat pengingat</td><td>Untuk memeriksa ketepatan waktu azan (disimpan hingga 60 hari untuk layar kesehatan pengingat)</td><td>Hanya di ponsel Anda</td><td>Pengaturan → Atur Ulang Salaty, atau copot aplikasi</td></tr>
           <tr><td>Data widget</td><td>Jadwal salat 30 hari dan preferensi tampilan widget, agar widget layar utama berfungsi tanpa membuka aplikasi</td><td>Hanya di ponsel Anda</td><td>Hapus widget, Pengaturan → Atur Ulang Salaty, atau copot aplikasi</td></tr>
@@ -68,7 +68,7 @@
       <ul>
         <li>Tanpa akun, tanpa masuk (login).</li>
         <li>Tanpa iklan, tanpa analitik, tanpa layanan laporan kerusakan, tanpa pelacakan.</li>
-        <li>Tidak menjual atau membagikan data. Tidak ada data yang dibagikan: tidak ada yang keluar dari ponsel Anda.</li>
+        <li>Tidak menjual atau membagikan data. Kami tidak pernah menerima data Anda, jadi tidak ada yang bisa kami bagikan.</li>
         <li>Tidak meminta lokasi presisi: aplikasi hanya meminta perkiraan lokasi (<strong>approximate</strong>), dan hanya saat Anda menekan "Gunakan lokasi saya" atau "Gunakan kompas".</li>
         <li>Tanpa lokasi di latar belakang: lokasi hanya dibaca saat aplikasi dibuka.</li>
       </ul>
@@ -87,6 +87,16 @@
         <li><strong>Getaran (<code>VIBRATE</code>):</strong> untuk opsi getar dan umpan balik haptik pada layar Kiblat.</li>
         <li><strong>Pengaturan suara (<code>MODIFY_AUDIO_SETTINGS</code>):</strong> untuk memutar azan dan pratinjau suara di dalam aplikasi.</li>
         <li><strong>Lencana ikon aplikasi (ditambahkan oleh pustaka notifikasi, misalnya untuk layar utama Samsung, Huawei, atau Oppo):</strong> Salaty tidak pernah menampilkan lencana pada ikonnya; izin ini tidak digunakan.</li>
+      </ul>
+    </section>
+
+    <h2>Jika Anda memakai aplikasi jam Wear OS</h2>
+    <section>
+      <p>Ini hanya berlaku jika Anda memasang Salaty di jam Wear OS. Tanpa aplikasi jam, ponsel Anda tidak mengirim apa pun ke jam.</p>
+      <ul>
+        <li><strong>Yang dikirim:</strong> lokasi atau kota Anda (koordinat, nama, dan zona waktu), pengaturan perhitungan, bahasa, dan gaya angka. Jam memerlukannya untuk menghitung jadwal salat sendiri.</li>
+        <li><strong>Cara pengirimannya:</strong> melalui layanan Google Play (Wear OS Data Layer). Langsung lewat Bluetooth saat jam terhubung. Saat Bluetooth tidak tersedia, Google meneruskannya melalui servernya dengan enkripsi end-to-end. Hanya aplikasi Salaty di perangkat Anda yang dapat membacanya; kami tidak menerimanya.</li>
+        <li><strong>Cara menghentikannya:</strong> copot Salaty dari jam. Saat Salaty berikutnya dibuka di ponsel, salinan bersama akan dihapus.</li>
       </ul>
     </section>
 
